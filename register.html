@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/cap.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>NYSC PLUG</title>
+</head>
+<body>
+ <!-- picture div -->
+<div class="emoji">
+
+</div>
+
+<!-- contact form -->
+
+<div class="container">
+    <h1 class="register">CONTACT FORM</h1>
+
+
+<form action="" method="post"  class="form-box" onsubmit="callvalue()" >
+
+
+
+<!-- <input type="email" class="input-field" name="origin" placeholder="Email Address"   id="origin" required>
+<br>
+
+
+<input type="number" class="input-field" name="deploy" placeholder="Phone Number"  id="deploy" required>
+<br> -->
+
+
+<select id="opt1" >
+    <option selected disabled class="off" value="">State of Origin</option>
+    <option>ABUJA FCT</option>
+    <option>ABIA STATE</option>
+    <option>ADAMAWA STATE </option>
+    <option>AKWA IBOM STATE </option>
+    <option>ANAMBRA STATE </option>
+    <option>BAUCHI STATE </option>
+    <option>BAYELSA STATE  </option>
+    <option>BENUE STATE </option>
+    <option>BORNO STATE </option>
+    <option>CROSS RIVER STATE </option>
+    <option>DELTA STATE </option>
+    <option>EBONYI STATE </option>
+    <option>EDO STATE </option>
+    <option>EKITI STATE </option>
+    <option>ENUGU STATE </option>
+    <option>GOMBE STATE </option>
+    <option>IMO STATE </option>
+    <option>JIGAWA STATE </option>
+    <option>KADUNA STATE </option>
+    <option>KANO STATE </option>
+    <option>KATSINA STATE </option>
+    <option>KEBBI STATE </option>
+    <option>KOGI STATE </option>
+    <option>KWARA STATE </option>
+    <option>LAGOS STATE </option>
+    <option>NASSARAWA STATE </option>
+    <option>NIGER STATE </option>
+    <option>OGUN STATE </option>
+    <option>ONDO STATE </option>
+    <option>OSUN STATE </option>
+    <option>OYO STATE </option>
+    <option>PLATEAU STATE </option>
+    <option>RIVERS STATE </option>
+    <option>SOKOTO STATE </option>
+    <option>TARABA STATE </option>
+    <option>YOBE STATE </option>
+    <option>ZAMFARA STATE </option>
+    </select>
+
+    <select id="opt2" >
+        <option selected disabled class="off" value="">State of Deployment</option>
+        <option>ABUJA FCT</option>
+        <option>ABIA STATE</option>
+        <option>ADAMAWA STATE </option>
+        <option>AKWA IBOM STATE </option>
+        <option>ANAMBRA STATE </option>
+        <option>BAUCHI STATE </option>
+        <option>BAYELSA STATE  </option>
+        <option>BENUE STATE </option>
+        <option>BORNO STATE </option>
+        <option>CROSS RIVER STATE </option>
+        <option>DELTA STATE </option>
+        <option>EBONYI STATE </option>
+        <option>EDO STATE </option>
+        <option>EKITI STATE </option>
+        <option>ENUGU STATE </option>
+        <option>GOMBE STATE </option>
+        <option>IMO STATE </option>
+        <option>JIGAWA STATE </option>
+        <option>KADUNA STATE </option>
+        <option>KANO STATE </option>
+        <option>KATSINA STATE </option>
+        <option>KEBBI STATE </option>
+        <option>KOGI STATE </option>
+        <option>KWARA STATE </option>
+        <option>LAGOS STATE </option>
+        <option>NASSARAWA STATE </option>
+        <option>NIGER STATE </option>
+        <option>OGUN STATE </option>
+        <option>ONDO STATE </option>
+        <option>OSUN STATE </option>
+        <option>OYO STATE </option>
+        <option>PLATEAU STATE </option>
+        <option>RIVERS STATE </option>
+        <option>SOKOTO STATE </option>
+        <option>TARABA STATE </option>
+        <option>YOBE STATE </option>
+        <option>ZAMFARA STATE </option>
+        </select>
+
+
+<select name="opt"  id="opt">
+    <option selected disabled class="off" value="">Select an Institute</option>
+   <option>Abdu Gusau Poly Zamfara</option>
+    <option>Abia St. Col. Hth. Sci. Mgt. and Technology</option>
+    <option>Abia State Polytechnic</option>
+    <option>Abia State University</option>
+    <option>Abraham Adesanya Polytechnic</option>
+    <option >Abubakar Tafawa Balewa Univ.</option>
+    <option>Abubakar Tatari Ali Polytechnic</option>
+    <option >Abuja Sch of Acct &amp; Comp Stud</option>
+    <option>Achievers University  Owo  Ondo State</option>
+    <option >Adamawa State Polytechnic</option>
+    <option>Adamawa State Univ.</option>
+    <option >Adekunle Ajasin University</option>
+    <option>Adeleke University, Ede</option>
+    <option>Adeseun Ogundoyin Polytechnic</option>
+    <option >Adeyemi College of Education</option>
+    <option>Admiralty University, Ibusa</option>
+    <option >Afe Babalola Univ Ado-Ekiti</option>
+    <option>Ahmadu Bello University</option>
+    <option >Airforce Inst of Tech Afit Kaduna</option>
+    <option >Ajayi Crowther University Oyo</option>
+    <option>Akanu Ibiam Federal Polytechnic</option>
+    <option>Akperan Orshi Coll. of Agric Yandev</option>
+    <option >Akwa Ibom State Polytechnic</option>
+    <option>Akwa Ibom State University</option>
+    <option>Al-Hikma Polytechnic</option>
+    <option >Al-Hikmah University</option>
+    <option> Al-Qalam University</option>
+    <option >Alex Ekwueme Federal University Ndufu-Alike</option>
+    <option >All Over Central Polytechnic</option>
+    <option >Ambrose Alli University</option>
+    <option >American Univ. of Nigeria</option>
+    <option >Aminu Dabo Coll. of Health Sci &amp; Tech</option>
+    <option >Anambra State Col. of Hlth Tech</option>
+    <option>Anchor University, Ayobo</option>
+    <option >Arthur Jarvis University</option>
+    <option ></option>Atiba University, Oyo</option>
+    <option >Auchi Polytechnic</option>
+    <option>Audu Bako Coll of Agric. Dambatta</option>
+    <option >Augustine University Ilara,Lagos</option>
+    <option >Babcock University</option>
+    <option >Bartholomew College of Health Tech.</option>
+    <option>Bauchi State College of Agriculture</option>
+    <option >Bauchi State University</option>
+    <option >Bayero University</option>
+    <option >Baze University, Abuja</option>
+    <option >>Bells University Ota</option>
+    <option >Benson Idahosa University</option>
+    <option >Benue Polytechnic</option>
+    <option >Benue State University</option>
+    <option>Bingham University Karu</option>
+    <option>Binyaminu Usman Polytechnic</option>
+    <option>Bowen University</option>
+    <option ="4ab89b2a-9fd8-411d-82f3-05e16fa1a98a">Caleb University, Imota</option>
+    <option ="8ea2e226-9ff4-4362-be69-fa7299eb2111">Caritas University Enugu</option>
+    <option ="7c6269f8-e1e7-42d3-b01f-0cdcc8b1d42e">Chrisland University,Owode</option>
+    <option ="0f5bc035-5594-4730-860e-4bc781c62764">Christopher University, Mowe, Ogun</option>
+    <option ="a3f632dc-f25c-4930-ba54-357fed650b10">Chukwuemeka Odumegwu Ojukwu Univ.</option>
+    <option ="8ec20d36-6fbf-471f-ac38-4d34103757ab">Clifford University</option>
+    <option ="97d7533d-7bd5-4808-b3de-862ff86d4818">Coal City University</option>
+    <option ="81cfe985-da6a-4064-918c-8b412ed281e8">Coll of Agric and Animal Sc. Bakura</option>
+    <option ="a6ebec51-abd0-43e9-9e7d-1246e83163b3">Coll of Hth Sci Luth  Idi-Araba</option>
+    <option ="9a31b4a9-1d84-4d1e-8148-7b372c0f71bf">Coll of Hth Sci Nnamdi Azik Univ</option>
+    <option ="1ad77738-f958-4d0a-ba04-aa2f8748e1e2">Coll. of Agric. &amp; Ani. Sci. Kaduna</option>
+    <option ="6e603c99-f014-4d82-afad-9a71a2ad8a16">College of Administration, Mgt &amp; Tech</option>
+    <option ="14ba0c85-ee17-43c8-9997-c82a81ea116a">College of Agric., Sc. &amp; Tech Lafia.</option>
+    <option ="4021bfc7-0bf6-497c-8490-347b19fd45c3">College of Agriculture  Kaba</option>
+    <option ="36743bde-f9f1-4944-8acb-75690498d0eb">College of Agriculture  Zuru</option>
+    <option ="a1e40d2d-6e31-4220-b25d-8369f4289d22">College of Agriculture Taraba</option>
+    <option ="94ed09c0-b908-41dc-acc0-01185793e416">College of Health Technology Zawan</option>
+    <option ="551a4681-42bf-4a25-96e5-977b5e298a50">College of Hth Tech Calabar</option>
+    <option ="34285c4f-afb5-42b2-86c7-eaab72ae5619">Covenant Polytechnic</option>
+    <option ="4ff12c00-e860-4fd4-82fa-9e4fdbef78bc">Covenant University Ota</option>
+    <option ="5eab4dfd-83d9-45fb-b765-a0745dd25684">Crawford University Igbesa</option>
+    <option ="6f92d375-dee7-419a-8b4d-ad7d8f9dac03">Crescent University Abeokuta</option>
+    <option ="c3bbfa86-6904-427f-b106-244f77e46f3f">Cross River Univ. of Tech</option>
+    <option ="26ad1e19-8ec2-4bfe-9d00-4b4dac7c71da">Crown Polytechnic</option>
+    <option ="318082c2-c5d1-44c1-9575-a6622629d918">D.S Adegbenro Ict Polytechnic</option>
+    <option ="ae890f38-1a05-4c62-b17e-fc72f7cbb3a5">Delta State College of Health Tech, Ofuoma</option>
+    <option ="1f54cd35-ffd4-45fc-a761-a4a86582ad52">Delta State Poly Otefe-Oghara</option>
+    <option ="d470a36f-15ac-491c-a60d-4ae802267f1d">Delta State Polytechnic  Ozoro</option>
+    <option ="72340d1f-f581-4352-8070-63bf9a64de02">Delta State Polytechnic, Ogwashi-Uku</option>
+    <option ="f4b1261b-44f1-4c08-ac6e-4b064dc67193">Delta State University</option>
+    <option ="fba44987-8e57-4aca-a77e-67acd345cad9">Dominican University Ibadan</option>
+    <option ="4ae2e4db-8be5-4692-892a-32149c10520d">Dominion University </option>
+    <option ="6fa96e5c-63ee-4f3b-b9f0-4c8e3318a9a8">Dorben Polytechnic, Abuja</option>
+    <option ="8dd1a137-e4ce-4260-8003-fa8ef173995b">Ebonyi State University</option>
+    <option ="c44612cc-f7c3-4228-9c80-192fae38b328">Edo State College of Agric. Iguoriakhi</option>
+    <option ="a3bf375d-0334-45b7-a16a-899131362402">Edo State Polytechnic</option>
+    <option ="b317245e-04ae-42e0-93db-5392d44b9d70">Edo State University, Uzairue</option>
+    <option ="cbd70af7-98ca-4fb8-9e1c-9def9ebf0d96">Edwin Clark University</option>
+    <option ="c9d1c130-4283-46eb-b7e0-80dc8e217e45">Ekiti State University</option>
+    <option ="8c202d42-60a8-47c2-bfa7-de7cbcfe0b45">Elizade University Ilara-Mokin</option>
+    <option ="7afa5cdf-b72d-412c-b457-404d10e71014">Emirates Coll of Hlth Sci &amp; Tech.</option>
+    <option ="6557f0dd-cfe5-4d4e-a67e-737af391419a">Enugu St. Univ. of Sci. &amp; Tech</option>
+    <option ="a816a520-57af-4ff9-bec9-f368cb21a23e">Enugu State Polytechnic</option>
+    <option ="4d711a40-a1d5-407e-9f0d-01b7814a8f9a">Evangel University</option>
+    <option ="004db168-5b6d-47de-ae99-bf432f0ef2d0">Fed Col of Ani Hth &amp; Prd Tec Moor Plantation</option>
+    <option ="26beebff-cbcb-4c4e-9b85-c62365adfcc1">Fed Col of Ani Hth &amp; Prd Tec Vom</option>
+    <option ="b6f3139b-4778-42e0-923f-9579df8ffeb1">Fed Col of Wildlife Mgt New Bussa</option>
+    <option ="2c32e775-7283-4ffa-b9a3-cba86353a547">Fed Coll of Agric. I.A.R.&amp;T  Ibadan</option>
+    <option ="fd66b903-e637-45a7-9378-b237feb54cf2">Fed Coll of F/W Fish N/Bussa</option>
+    <option ="00e001a7-b85f-4e02-8087-7dd2769cc9b4">Fed Coll of Fish &amp; Mar Tech Lagos</option>
+    <option ="db48aae2-914f-42f6-8521-2c0d3359d2b6">Fed Coll of For. Mech  Afaka</option>
+    <option ="50d4a21c-a19e-49ac-8ff3-0011b7a4f10c">Fed Coll of Forestry J/ Hill Ibadan</option>
+    <option ="d4da3c42-0262-445f-bf59-3c3f3f878fc8">Fed Coll of Horticulture Dadinkowa</option>
+    <option ="c59e46ef-6669-4bcc-bdf2-83e68ecd5909">Fed Coll of Land Res Tech  Kuru</option>
+    <option ="86d6ae42-6fc4-483a-8d34-46623816934b">Fed Coll of Land Res Tech Owerri</option>
+    <option ="c2889be5-6f25-4af6-bf0e-b0943e2627ab">Fed Coll. of Freshwater Fisheries Tech, Baga</option>
+    <option ="4020d8c6-0ef4-4d02-8764-88b0a7df6b73">Fed Coop Coll.  Ibadan</option>
+    <option ="286eb1a3-226c-445c-b685-02922c71a663">Fed Coop Coll.  Kaduna</option>
+    <option ="ab90e9af-c446-4803-a5fd-e6eb53ccfd06">Fed Sch of Dent Tech &amp; Thpy Enugu</option>
+    <option ="bfbcca6c-703c-4138-9ece-20f68967f4ce">Fed Univ of Pet. Resources Effurun</option>
+    <option ="27e7b8cf-0006-4b02-8d0a-a55ca67a5b09">Fed. Co-Op Coll.  Oji-River</option>
+    <option ="9c18ed43-733e-4fcf-901d-d9eb653504f1">Fed. College of Orthopaedic Tech. Igbobi Lagos</option>
+    <option ="35315eba-a0bd-48e7-8114-6a64851eb1c3">Fed. Univ. Birnin Kebbi</option>
+    <option ="8abb1887-3f78-4b6a-87f6-5e6f8e0e16c0">Fed. Univ.Of Agric Abeokuta</option>
+    <option ="c7757e4d-6616-43f1-ac8a-b52b08f9dc3a">Federal Coll. of Agric. Akure</option>
+    <option ="a24459a9-e23f-490f-b143-40c6dfc1fc8c">Federal Coll. of Agric. Ishiagu</option>
+    <option ="3adeb19f-aa00-4eb5-aea8-5a452343f84a">Federal Coll. of Forestry  Jos</option>
+    <option ="b2320e21-766f-460c-ac6b-4a37b7505629">Federal College of Agricultural Produce Tech. Kano</option>
+    <option ="bd9edb24-8ee8-421e-b2b7-7c84cc261553">Federal Poly Kaura - Namoda</option>
+    <option ="39201d35-768c-4d73-b2c5-d4daa7e55eb1">Federal Polytechnic  Ado-Ekiti.</option>
+    <option ="6b11da59-b339-4613-b980-737f6b4b144c">Federal Polytechnic  Ede.</option>
+    <option ="81e04dcb-7183-420a-82d0-b952c81a12d2">Federal Polytechnic  Nasarawa</option>
+    <option ="ebe3b5a1-e85c-4f07-8ab7-79d4d68f7c57">Federal Polytechnic  Offa.</option>
+    <option ="c36fbcec-81c8-43f0-9f8c-2d5f16354308">Federal Polytechnic Bali</option>
+    <option ="644f42ed-dbf2-4a23-b5d4-3dc36ed37347">Federal Polytechnic Bauchi</option>
+    <option ="56737b89-44be-44d5-805a-377cbd086465">Federal Polytechnic Bida</option>
+    <option ="887fd9f0-af88-4938-be0e-35ef72774fcf">Federal Polytechnic Damaturu</option>
+    <option ="c6079b73-ea8c-4d63-acbc-d97e2cd5c37a">Federal Polytechnic Idah</option>
+    <option ="c621ae46-f4b4-4fea-88f0-a44dd6616d24">Federal Polytechnic Ilaro</option>
+    <option ="34c74cb3-ee49-49aa-9bd5-5daff8f588d8">Federal Polytechnic Mubi</option>
+    <option ="f9f653ba-b9d0-48fc-9edf-3a8c0db05ec4">Federal Polytechnic Nekede</option>
+    <option ="07b48a4e-a7bc-446c-afc5-0b1a5f3725c5">Federal Polytechnic Oko</option>
+    <option ="5889d6b3-6522-4fd1-8607-7822a0e24492">Federal Polythecnic, Ekowe</option>
+    <option ="77549da5-17fa-4121-9f78-81b0d2ea996b">Federal School of Radiography Yaba</option>
+    <option ="655935cc-8237-4fcd-a403-025a00e338ad">Federal School of Surveying Oyo</option>
+    <option ="cf3a8349-fb57-4772-947f-4e308e3ec998">Federal Univ. of Tech Owerri</option>
+    <option ="1c33d844-04df-4401-a698-865c042ee317">Federal Univ. of Tech.  Bauchi</option>
+    <option ="cdc9f22c-1f1c-460e-8978-5951573a2a00">Federal Univ. of Tech. Akure</option>
+    <option ="2355c97a-45aa-4c1c-8bcd-37a2158db20c">Federal Univ. of Tech. Minna</option>
+    <option ="60c71ced-1d95-472f-93f9-3d3e61c841fc">Federal University ,Lafia, Nasarawa State</option>
+    <option ="c39fecc5-360d-467f-a769-0a980d7f92d5">Federal University Dutse</option>
+    <option ="226fa07c-4fa9-42ad-898a-ea3d63f20359">Federal University Dutsin-Ma</option>
+    <option ="04be257e-61ec-41d0-97c3-ee672b2eb82e">Federal University Gusau</option>
+    <option ="91b3a947-aaf1-4b5e-bc0e-c1e0a7c1f8dd">Federal University Kashere, Gombe</option>
+    <option ="4b82dab5-511c-4f3f-9f06-dc2c6f17b745">Federal University Lokoja</option>
+    <option ="07d77512-ebd7-4b68-abfd-f2b69f834331">Federal University of Agriculture</option>
+    <option ="353c5852-8c2e-43eb-a7fe-64d691277520">Federal University Otuoke</option>
+    <option ="e92ab667-894a-4c99-9262-ac79a6d2e406">Federal University Oye-Ekiti</option>
+    <option ="6c6e9442-5b74-487f-ada3-8ec9486f93c6">Federal University Wukari</option>
+    <option ="337875b5-3d0b-4e3e-a845-68587843e24d">Federal University, Gashua</option>
+    <option ="610780f2-fee9-4951-88f3-2e42482396bd">Fidei Polytechnic</option>
+    <option ="4d28f3f1-0533-43b0-8c03-24874d535912">First Technical University, Ibadan, Oyo State</option>
+    <option ="9e63982b-88d5-4053-9f6c-4871c5ef0538">Fountain University Osogbo</option>
+    <option ="f34bee9a-dfa2-4fe8-8769-2e5fa05292b1">Gateway Polytechnic</option>
+    <option ="1128be87-a643-4df0-b2b7-e9d2b123de26">Gboko Polytechnic</option>
+    <option ="e83bc65b-7278-4a9b-b6a6-34660837b977">Godfrey Okoye Univ Enugu</option>
+    <option ="492a4f07-2d06-4c17-9a7c-9696f759f8bb">Gombe State Coll of Hlth Sci.</option>
+    <option ="5d93df05-c69e-4d22-95a8-30a3e3f9cc12">Gombe State University</option>
+    <option ="6e9cac4b-2aed-4e77-84cc-ab21bee0e58c">Grace Polytechnic</option>
+    <option ="37b416a2-2f53-4d8e-b965-3f636d36c722">Gregory University Uturu</option>
+    <option ="8808e4d3-37bd-48af-adc4-cd3c29c6e1d7">Hallmark University, Ijebu-Itele,Ogun</option>
+    <option ="e1e316c8-cd91-4340-9b48-3c1e178f62c1">Hassan Usman Katsina Polytechnic</option>
+    <option ="29be17ba-e674-4152-9c8e-9a033f0a56a7">Havilla University </option>
+    <option ="700342b7-b284-439b-bde6-7eb7c44c6ad7">Heritage Polytechnic</option>
+    <option ="98550865-4c1a-400f-8804-b987563190d8">Hezekiah University</option>
+    <option ="e1a8a197-e797-4a1e-8dbd-0dadef8d60f3">Hussaini Adamu Federal Polytechnic</option>
+    <option ="09abf1d9-eca9-4f61-8af7-75c827980041">Ibadan City Polytechnic</option>
+    <option ="b0818051-52db-4f40-b537-7c862695fc9b">Ibb.  Coll of Agric Obubra</option>
+    <option ="f662caeb-c7b1-4b93-9a43-154a45b51a90">Ibeku Polytechnic, Nigeria</option>
+    <option ="cddd638a-e483-4af2-a94a-6371755d8e15">Ibrahim B. Babangida Univ Lapai</option>
+    <option ="4a75c65c-9b0b-483b-98c2-17f8d1813985">Igbajo Polytechnic</option>
+    <option ="50395ecb-7cb9-4e0e-8d22-bcefe3a56451">Igbinedion University</option>
+    <option ="219f530f-4c1d-4877-923b-1ee83fe06c6e">Ignatius Ajuru Univ of Education</option>
+    <option ="444a05e1-0cf0-48b1-9880-6fa8d4cc9c6a">Imo State Polytechnic</option>
+    <option ="906749a7-c0d5-4c95-ba28-a3e00ac00423">Imo State University</option>
+    <option ="7ca127d0-3c5e-4589-81b1-cab31c35ca70">Institute of Health Technology , Ubth</option>
+    <option ="177ea6f3-5f6e-4d79-8e59-01189f07d934">Institute of Mgt and Tech Enugu</option>
+    <option ="bfbc962d-863e-4126-b4e2-ae81c865c751">Isa Mustapha Agwai I Polytechnic</option>
+    <option ="302e1a19-134b-4ff9-90be-65b5445edfee">Jigawa State Inst. of Info. Tech</option>
+    <option ="fac2261e-4dbe-4042-a7c0-c2384df34d6b">Jigawa State Poly Dutse</option>
+    <option ="f0adac77-3f77-419f-bc74-be43aadc9132">Joseph Ayo Babalola Univ.  Ilesa</option>
+    <option ="426a3d50-b90c-428a-a42d-bb94ae61e5e1">Joseph Sarwuan Tarka University</option>
+    <option ="cb4d37e8-ea0f-428b-a40a-0c90c0cd6c6a">Kaduna Polytechnic</option>
+    <option ="b0479e56-82f3-4eeb-8db5-9a7c9445ce8a">Kaduna State University</option>
+    <option ="271765ef-ce69-4c1c-a7c2-3f4ffb56c6a2">Kanmi Alo Interlink Polytechnic Ijebu Ijesa</option>
+    <option ="c370fa29-0521-4bec-8f9f-eaaa90e00497">Kano St. Coll of Hlth Sci &amp; Tech.</option>
+    <option ="48c31841-ae40-49bd-aefa-2d3b8295e42e">Kano State Polytechnic</option>
+    <option ="f396a2e7-4ec6-4cfc-b9a9-2bb3c2c99bd7">Kano State Univ of Science and Tech</option>
+    <option ="6ea4dd35-f088-41f2-bf38-7d75462968a1">Kebbi St. Uni of Sci &amp; Tech Aleiro</option>
+    <option ="6c445d62-e5e3-4361-a86d-39270ffdc2cd">Kenule Beeson Saro-Wiwa Polytechnic</option>
+    <option ="36cadc18-68ee-4667-be57-7b39b7ff18de">Kings University, Ode- Omu, Osun</option>
+    <option ="8da5b54c-5dd3-40cd-a069-99feec43332f">Kogi State Polytechnic</option>
+    <option ="57af4a26-797a-41d5-a449-4ab299e391f5">Koladaisi University, Ibadan</option>
+    <option ="6b7b5a24-1df0-4a3d-bb0d-618187a86716">Kwara State College of Health Tech,</option>
+    <option ="1f06ec6e-fbe5-4c16-b005-e094eb4f6906">Kwara State Polytechnic</option>
+    <option ="a11d9b31-47ac-429c-a93f-21810563c9e2">Kwara State Univ Malete</option>
+    <option ="ec417bc1-bb58-4b87-9280-3e781b474806">Kwararafa University Wukari</option>
+    <option ="3e1f287f-81bd-4f8c-ac0b-1d5b73f67566">Ladoke Akintola Univ of Sci and Tech</option>
+    <option ="80da4ca5-07a5-4f22-af41-c115ec06acaa">Lagos City Polytechnic  Ikeja</option>
+    <option ="a368f18a-ee37-4e00-9cc4-5c49ee6f2e77">Lagos State Coll of Hlth Tech</option>
+    <option ="77158ad0-2436-44a5-9ce7-b6474585d59c">Lagos State Polytechnic</option>
+    <option ="e2807cb5-e323-49b1-bfdd-692e2b4d47ea">Lagos State University</option>
+    <option ="2d3d1fe6-f751-4f7a-bc38-c7d57ce344dc">Landmark University</option>
+    <option ="7971754b-cd26-4429-9367-c59a1cc4da83">Lead City University Ibadan</option>
+    <option ="d4e84afd-0608-4e15-b952-d2daf10d5ac9">Legacy University</option>
+    <option ="70406866-5b03-4ea5-8686-705abb9c0201">Lens Polytechnic</option>
+    <option ="753eb2eb-c5cf-471b-95ad-2f6c7804a299">Light House Polytechnic Evbuobanosa</option>
+    <option ="e9e5fa9c-ae0d-4043-9099-c42511bb3e60">Madonna University Okija Anambra</option>
+    <option ="2cb6e989-bbc5-462d-9a90-4595ce489cff">Maritime Academy of Nigeria Oron</option>
+    <option ="22e46c15-c5ae-4cae-8b2e-5d6818904185">McPherson University</option>
+    <option ="acff39f8-f2b5-4821-9a20-94ff3609a7f4">Michael and Cecilia Ibru Univ.</option>
+    <option ="99e0135d-9a0e-4aa6-90ce-53a2ef63a4c3">Michael Okpara Univ. of Agric</option>
+    <option ="00112e39-9273-480a-9ea3-b9582cf1032b">Micheal and Cecilia Ibru Univ. Owhrode, Delta</option>
+    <option ="ae602f2e-a3cd-4c16-b350-981e4887fc70">Millennium College of Health Technology</option>
+    <option ="e9fe7152-7488-4b7c-9d3b-f30d3665436a">Modibbo Adama University</option>
+    <option ="2bd24c14-2b66-442e-9b9a-58c50c259d27">Mohammet Lawan Coll. of Agric</option>
+    <option ="c246f212-b38f-4341-9771-efb9d4f3c876">Moshood Abiola Polytechnic</option>
+    <option ="5c64aa14-db20-4767-a548-3fe28d306185">Mountain Top Univ. Makogi/Oba, Ogun</option>
+    <option ="592736f3-6cec-47d6-928a-2be5d62e214f">Nasarawa State University</option>
+    <option ="c21b451c-6ae7-4dfe-85b6-45db3b528461">Nat Orth Hosp Col of Hth Sci Igbobi</option>
+    <option ="1b84d700-7874-4505-9e24-a6eb687c24a1">National Open University of Nigeria, Noun</option>
+    <option ="d479afad-fcaa-454d-a0c7-bf86c1cdacce">National Water Res. Inst. Kaduna</option>
+    <option ="35bf0a95-fce6-4fce-a8aa-22c5d0c8af36">Newgate Coll of Health Tech</option>
+    <option ="3208a2a0-f386-4032-a720-8ed687ecc6c6">Nig Inst of Lth and Sci Tech Zaria</option>
+    <option ="72df9b49-96c4-4ba6-8676-fffa157b8f31">Nig. Army Sch of Fin &amp; Admin Apapa</option>
+    <option ="07967a46-6517-4beb-8f65-d2f2c9d654bd">Nig. Police Academy</option>
+    <option ="7de9451c-daa6-42d0-9be4-cfac9fc31fb2">Niger Delta University</option>
+    <option ="d4b27116-36c2-42e9-83f6-57b9755a6181">Niger St. Coll of Agric Mokwa</option>
+    <option ="a4f03b7b-17cf-4463-8974-51235de109eb">Niger State Polytechnic Zungeru</option>
+    <option ="17af5563-7fb7-45b4-b328-1101a1770ff9">Nigeria Army Coll. of Environ. Sci. &amp; Tech</option>
+    <option ="29d6130a-9ba9-4ebb-b687-1e1976cc27c2">Nigeria Inst. of Leather and Science Tech</option>
+    <option ="14851b4a-d5e5-4e23-b6c4-8759bf6b1112">Nigeria Maritime University</option>
+    <option ="3b38131c-cb52-4a05-8212-981b552ac078">Nigerian Army School of Finance and Admin</option>
+    <option ="5ac8c4b6-39a9-4479-9664-ef287b9e4c35">Nigerian Army University, Biu</option>
+    <option ="377e0bf0-9ed4-4495-9404-e8f8d244d165">Nigerian College of Aviation Technology</option>
+    <option ="a0332c09-4b3b-4e6b-9511-536545a6e490">Nigerian Defence Academy</option>
+    <option ="9d1acbc7-7dbc-45b6-910a-e197a78c3b93">Nigerian Inst of Journalism  Ikeja</option>
+    <option ="b4c04157-bec4-4631-9a09-66e656a8d23a">Nile University of Nigeria Abuja</option>
+    <option ="e8323324-37c1-4f36-aae3-206219d4c0c3">Nkst Coll. of Health Tech  Mkar</option>
+    <option ="7a975da1-8729-4570-a11c-c5b8b5e34738">Nnamdi Azikiwe University</option>
+    <option ="b259df00-c82d-44b3-9f90-6c97c6186444">Novena University Ogume</option>
+    <option ="33d0c604-40f6-4290-9d14-a423b0c0fd6e">Nuhu Bamalli Poly Zaria</option>
+    <option ="ed7379e2-2443-4b52-a513-f610621a8137">Nysc University</option>
+    <option ="fdc0ea6c-0d10-46b1-9669-e25319ba6dfc">Obafemi Awolowo University</option>
+    <option ="f9ffd034-beec-4234-9294-2faa87f3d6fe">Obong University</option>
+    <option ="8ad03a79-25ef-488f-8568-291d23b2fbe7">Oduduwa University, Ipetumodu</option>
+    <option ="3eeef000-7ffe-422e-a7c8-475c3f24c7fc">Ogun St Coll of H/ Tech Ilese-Ijebu</option>
+    <option ="ac5091c6-47c9-4623-90d5-e6259073bea7">Ogun State Inst of Tech Igbesa</option>
+    <option ="91b7e445-54ce-4c81-80c9-d2f0dc7e989e">Olabisi Onabanjo University</option>
+    <option ="e198e758-c5ee-4107-9649-963851cd42f4">Olusegun Agagu Univ of Science and Technology</option>
+    <option ="10deb55c-19a6-4738-8369-d72d475d3e11">Ondo State College of Health Tech.  Akure</option>
+    <option ="16826a04-fc4c-42f0-aaf5-47753a1a0234">Osun St Coll of Edu Ila-Orangun</option>
+    <option ="7ea7107c-abab-424c-a871-4dde1cf69fea">Osun State Coll. of Educ Ilesa</option>
+    <option ="746aef8e-68f7-49e0-ba1a-6b214cd76e67">Osun State College of Tech.</option>
+    <option ="ac27f22f-e3d9-49a6-b770-dd2ea53baed3">Osun State Poly</option>
+    <option ="ebbc4433-1364-4b44-9b92-3db02ac94c98">Osun State University Osogbo</option>
+    <option ="83e6184c-7154-47c5-9a00-06a497aa7470">Our Saviour Polytechnic Enugu</option>
+    <option ="c3005597-5ebb-4a6b-a382-83b2aa73a48a">Oyo State College of Agriculture &amp; Tech, Igboora</option>
+    <option ="d38bfb19-3d63-4212-bc42-8b70624303db">Oyo State College of Health Sc. and Technology, Eleyele</option>
+    <option ="f1202264-68fe-437e-bf01-a3427172a3ad">Pamo Univ of Med Sci</option>
+    <option ="4902be6a-c449-4718-88bb-e581d26f6147">Pan Atlantic University</option>
+    <option ="333a2c12-e139-42f6-a06b-f007ad13e4f8">Paul University Awka,</option>
+    <option ="e4640f71-6ccd-4b05-9219-89b62b2d9d77">Petroleum Training Inst. Delta</option>
+    <option ="ab58cbae-32a8-4622-b1fb-93186fa3df3f">Plateau State Coll of Agric</option>
+    <option ="764bcb41-5809-4e77-bb62-c9019ceb4893">Plateau State Polytechnic</option>
+    <option ="b992e9d5-0e28-4e70-8898-51e06d78dfb3">Plateau State University</option>
+    <option ="e6525f44-aabd-4baa-8c53-2a204428ee63">Pogil College of Health Technology</option>
+    <option ="b437423f-bea7-4d35-9be0-944a1dd5fc20">Port Harcourt Polytechnic</option>
+    <option ="1e6daa31-9eba-46b0-80bd-916aa510b687">Precious Cornerstone University</option>
+    <option ="10c6188a-0b60-453f-9e64-b732be99ca7d">Prince Abubakar Audu University, Anyigba</option>
+    <option ="65aa386a-693a-4da8-9310-c52ddd67cd48">Ramat Polytechnic</option>
+    <option ="af51845a-e67e-4cdc-a698-1ee19e4da733">Redeemers University</option>
+    <option ="400cd67d-d977-4fc0-b0d8-c6e0951253c0">Renaissance Univ . Ugbawka Enugu</option>
+    <option ="3d4ae84e-d0bd-48db-aeca-e448a377bbd0">Rhema University, Nigeria</option>
+    <option ="7a3f80a7-e09f-4e4c-9802-c418151075e4">Ritman University Ikot-Ekpene</option>
+    <option ="7b52531a-ab37-4718-814a-3fc90af99761">Rivers State Coll of Hlt Sci and Mgt Tech</option>
+    <option ="a3929976-525f-4515-9ef5-50ada45bfb8b">Rivers State University</option>
+    <option ="c5942c62-34bc-483e-9b2d-f66b9abdedc7">Ronik Polytechnic Lagos</option>
+    <option ="d56ad070-02b6-400b-a3ae-42af21ed167f">Rufus Giwa Polytechnic</option>
+    <option ="2a13b96e-cb6c-43a1-b6ee-5a1bf1fd04df">Salem University Nigeria</option>
+    <option ="296335a0-2c06-4fe1-859b-f5fb37baf5ea">Samaru College of Agriculture</option>
+    <option ="05721598-09e9-429d-996c-3d11c4529655">Samuel Adegboyega University</option>
+    <option ="67603094-8a87-4afb-91be-d9851ff9913a">Sch of Hth Info Mgt Akth Kano</option>
+    <option ="47bbdabf-bf6d-46a6-b20d-d84a5363c9ad">Sch of Hth Info. Mgt. Abuth Zaria</option>
+    <option ="80fb9dfe-f465-4b6d-bb41-1b339955aceb">School of Health Info Management Nauth</option>
+    <option ="c7e07569-be14-4306-85ba-c42b659163bd">School of Health Info Mgt, Upth</option>
+    <option ="87740a3a-f90d-46d7-89f4-3fe04d68b7ee">School of Health Info. Management Oauth</option>
+    <option ="2830cb67-2089-4e14-8b29-c909c25bb9f6">School of Health Info. Management Uch</option>
+    <option ="30b9b78e-997d-4d4e-8257-1674fcc166b5">School of Health Info. Mgt, Ubth</option>
+    <option ="788f0e52-9565-4d2b-a0d9-2998e0d4857d">School of Health Info. Mgt. Uduth</option>
+    <option ="80c12a53-83a4-477d-b2f3-ff3492667985">School of Health Info. Mgt. Uith</option>
+    <option ="3119059f-8fe9-44b4-b66c-c0f435bb6b16">School of Health Info. Mgt. Umth</option>
+    <option ="e451f45a-dd3e-48f9-ae77-a9818d9ce38f">School of Health Info. Mgt. Uuth</option>
+    <option ="f55e1cf8-11a8-4d6c-986a-c9d68265b333">School of Health Info. Mgtluth</option>
+    <option ="d82bbc1c-1941-4690-bfbd-707b235e8b05">School of Health Information Management Uduth</option>
+    <option ="9d2e0743-50ab-432f-b0b9-b7acc7c6205d">School of Health Information Management, Uuth</option>
+    <option ="24a36cd8-e180-437f-a54a-fa53d08ffea4">School of Hth  &amp; Info. Mgt Calabar</option>
+    <option ="194f63c4-e217-4ad9-9379-931921d9dca3">School of Med. Lab. Tech Enugu</option>
+    <option ="f28b2495-3585-4365-b00d-a4873241a891">Shehu Idris Col of Hth Tech Makarfi</option>
+    <option ="733eea5f-eec4-4305-a0cd-615d69b4c01d">Skyline University Nigeria</option>
+    <option ="e5365d1c-5588-4adf-8a36-89ecc19e63df">Sokoto State University</option>
+    <option ="8c8e00c0-c549-4361-8d01-230dcd4082cf">Southwestern University, Nigeria</option>
+    <option ="5553a7e1-a3db-41c0-afc0-18cc38a1bb28">Sule Lamido University</option>
+    <option ="73d88e5b-acb5-4884-b19c-4a0cf79ba366">Summit University, Offa, Kwara</option>
+    <option ="cabc883b-49e5-4026-887d-42257efd7e85">Tai Solarin Univ. of Education</option>
+    <option ="b596cdb7-d1bc-4522-8cf9-c77389e69edd">Tansian University Umunya</option>
+    <option ="76ba6ec2-5d6f-4613-b576-46791c0be943">Taraba State University</option>
+    <option ="910bfba1-c855-4d68-a1e3-015fbc200371">Temple Gate Poly Aba</option>
+    <option ="c686fe3d-8834-42fe-92a3-84c35802d243">The Oke-Ogun Polytechnic</option>
+    <option ="eebfe217-9526-4b81-bd53-e19d0e8fa833">The Polytechnic Calabar</option>
+    <option ="ea7a4b52-b781-48e5-97d1-3e9ed92ac4b9">The Polytechnic Ibadan</option>
+    <option ="25bd5e07-5a32-4cbd-9acd-1fa856eefefb">The Polytechnic Ife</option>
+    <option ="8517efbe-3d40-46d6-a665-dddb7a54fc45">The Polytechnic of Sokoto State</option>
+    <option ="3503bfdf-f4c1-4b5c-8f6d-a24016399340">Trinity University</option>
+    <option ="76f89aba-7c38-450e-a95b-70d1334bd452">Umaru Musa Yaradua Univ. Katsina</option>
+    <option ="73691630-b98d-4734-9cae-aeeb739a29db">Univ. of Medical Sciences</option>
+    <option ="033289e6-b569-453e-b614-801c44e9170b">Univ. of Nigeria Enugu Campus</option>
+    <option ="9e54e7cc-ed92-44d5-b4df-41237f8ac964">University of Abuja</option>
+    <option ="e974ffdd-e873-42a8-84ab-b1e794305dd4">University of Africa</option>
+    <option ="127d7e5c-4b8c-433a-b970-8275d89cc508">University of Benin</option>
+    <option ="976a2a58-9f84-4637-820f-2c89fe9b4b89">University of Calabar</option>
+    <option ="8c8429f3-7978-4bcb-976f-b8d147034525">University of Ibadan</option>
+    <option ="d1f1a8a2-f793-4332-a55e-eaeeb6a9be15">University of Ilorin</option>
+    <option ="6b5483c6-e0b3-408f-8b82-8f4db73c0d92">University of Jos</option>
+    <option ="42906194-78fd-4ae6-a91b-29d780ad55ee">University of Lagos</option>
+    <option ="9160240e-fd53-47a2-a91e-fd29582de667">University of Maiduguri</option>
+    <option ="4953770d-113f-41ee-82cd-5a19113b4c31">University of Mkar</option>
+    <option ="ea0ca1ae-0785-4857-bca5-34d1c730d661">University of Nigeria</option>
+    <option ="b4ac1716-f6bf-4cfd-81e5-d91f75a4941d">University of Port Harcourt</option>
+    <option ="a65bc813-d7d4-45a8-a99c-038dd6f938f3">University of Uyo</option>
+    <option ="7c3bafbf-bc3d-4610-a0cd-edffc3c66eee">Usmanu Dan Fodiyo University</option>
+    <option ="c66be373-bb48-4be3-b7d7-b698bda87585">Veritas University Abuja</option>
+    <option ="cebac0ea-4029-4fb7-8127-26ed7789fdd6">Villanova Polytechnic Imesi Ile</option>
+    <option ="5c6512e7-3124-4427-a40c-f22388926b00">Wavecrest Col of Catr &amp; Hosp Mgt</option>
+    <option ="387fffcb-c5b9-4d9b-88c2-b3f5bac67d3a">Waziri Umaru Poly Birnin Kebbi</option>
+    <option ="7da104fb-726c-43d2-9d40-53fade8b0143">Wellspring University</option>
+    <option ="58942fb1-e1f0-4152-b7f7-829d380ca99e">Wesley University Ondo</option>
+    <option ="c065c7e9-6eb6-4ed3-8116-de5448d13e0c">Western Delta University Oghara</option>
+    <option ="ad75d0d0-9fc9-42a4-a65f-6d86cdb4aded">Wolex Polytechnic</option>
+    <option ="1387db33-7f9b-4ce0-b444-6a449a0be7d9">Yaba College of Technology</option>
+    <option ="03ce3a74-001e-4839-9ea0-a44f4966ca88">Yobe State College of Agriculture, Science &amp; Technology</option>
+    <option>Yobe State University</option>
+    <option>Yusuf Maitama Sule University</option>
+</select>
+
+<br>
+<input type="text" class="input-field" placeholder="Course of Study"  id="study" required>
+<br>
+<input type="text" class="input-field" placeholder="Surname"  id="surname" required>
+
+<br>
+<input type="text" class="input-field" placeholder="First Name"  id="first" required>
+
+<br>
+<input type="text" class="input-field" placeholder="Call up Number" id="call" required>
+<br>
+
+<button type="submit">
+    SUBMIT
+</button>
+
+</form>
+
+
+
+<h4 class="fm">please fill in your details correctly </h4>
+</div>
+
+
+
+<script text="text/javascript">
+
+    function callvalue() {
+        // var orign = document.getElementById("origin").value;
+        // var deplo = document.getElementById("deploy").value;
+        var option1 = document.getElementById("opt1").value;
+        var option2 = document.getElementById("opt2").value;
+        var option = document.getElementById("opt").value;
+        var stud = document.getElementById("study").value;
+        var surn = document.getElementById("surname").value;
+        var fist = document.getElementById("first").value;
+        var call = document.getElementById("call").value;
+        var but = document.querySelector('button');
+
+// document.writeln("Email Address: " + orign + "<br>");
+// document.writeln("Phone Number: " + deplo + "<br>");
+document.writeln("State of Origin: " + option1 + "<br>");
+document.writeln("State of Deployment: " + option2 + "<br>");
+document.writeln("Select Institute: " + option + "<br>");
+document.writeln("Course Of Study: " + stud + "<br>");
+document.writeln("Surname: " + surn + "<br>");
+document.writeln("First Name: " + fist + "<br>");
+document.writeln("Call up Number: " + call + "<br>");
+document.writeln( but)
+
+
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
