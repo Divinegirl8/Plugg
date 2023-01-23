@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/register.css">
     <title>NYSC PLUG</title>
 </head>
-<body>
+<body id="content">
  <!-- picture div -->
 <div class="emoji">
 
@@ -20,7 +20,7 @@
     <h1 class="register">CONTACT FORM</h1>
 
 
-<form action="" method="post"  class="form-box" onsubmit="callvalue()" >
+<form class="form-box" data-parsley-validate="data-parsley-validate" data-parsley-excluded="input[type=button], input[type=submit], input[type=reset], input[type=hidden], :disabled, :hidden" id="submitData" method="post">
 
 
 
@@ -476,9 +476,7 @@
 <input type="text" class="input-field" placeholder="Call up Number" id="call" required>
 <br>
 
-<button type="submit">
-    SUBMIT
-</button>
+<button id="submitFormBtn" type="submit"> SUBMIT </button>
 
 </form>
 
@@ -488,10 +486,20 @@
 </div>
 
 
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/parsley.js/2.1.2/parsley.min.js"></script>
 <link href="https://parsleyjs.org/src/parsley.css" rel="stylesheet">
 
-<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="js/wait.js"></script>
+<link rel="stylesheet" href="css/wait.css">
 
 <script src="js/general.js"></script>
 
